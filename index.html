@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+<menu>
+
+</menu>
 
 <body>
     <!-- header start -->
@@ -423,6 +426,8 @@
     </div>
 
     <!--Tag <span> inline element used as a container for some text-->
+    <p>Using CSS CSS can be added to HTML documents in 3 ways: Inline - by using the style attribute inside HTML elements Internal - by using a "style" element in the "head" section External - by using a "link" element to link to an external CSS file</p>
+
     <h2>Some
         <span style="color:red ">Important</span> Message using a tag
         <span style="color:gold ">span</span>
@@ -566,14 +571,16 @@
 
         <!-- Text Field input elements are a convenient way to get input from your user. -->
         <input type="text" name="texto teste" value="valor que aparece na caixa">
-        <!-- "value" vai aparecer na caixa e fazer parte do input -->
+        <!-- "value" vai aparecer na caixa e fazer parte do input a menos 
+        que se apaque o texto -->
 
         <br>
         <input type="text" name="texto teste" placeholder="cat photo URL">
-        <!-- "placeholder" vai aparecer na caixa e não faz parte do input -->
+        <!-- "placeholder" vai aparecer na caixa e não faz parte do input 
+        quando clicar para digitar texto -->
         <br>
 
-        <!-- Create a Form Element You can build web forms that actually submit 
+        <!-- Create a Form Element - You can build web forms that actually submit 
         data to a server using nothing more than pure HTML. You can do this 
         by specifying an action on your form element. -->
 
@@ -663,14 +670,128 @@
 
     </div>
 
-    <footer>
-        <div id="copyright">
-            &copy; 2020 Meu Blog. All rights reserved.
-            <a href="# ">
-                <img alt="LICENSE " src="https://img.shields.io/github/license/eduardodarocha/Curso_Sololearn " />
-            </a>
-        </div>
-    </footer>
+    <!-- w3schools - HTML Text Formatting  -->
+
+    <p>This text is normal.</p>
+
+    <p><b>This text is bold. The HTML "b" element defines bold text, without any extra importance.</b></p>
+
+    <strong>This text is important! The HTML "strong" element defines text with strong importance. The content inside is typically displayed in bold.</strong>
+    <br><br>
+
+    <i>This text is italic - The HTML "i" element defines a part of text in an alternate voice or mood.</i>
+    <br><br>
+
+    <em>This text is emphasized - The HTML "em" element defines emphasized text. The content inside is typically displayed in italic.</em>
+    <br><br>
+
+    <small>This is some smaller text.</small>
+    <br><br>
+
+    <p>Do not forget to buy <mark>milk</mark> today. The HTML "mark" element defines text that should be marked or highlighted.</p>
+    <br>
+
+    <p>My favorite color is <del>blue</del> red. The HTML "del" element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
+    <br>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>. The HTML "ins" element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
+    <br>
+    <p>This is <sub>subscripted</sub> text. The HTML "sub" element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like
+        H
+        <sub>2</sub>O. </p>
+    <br>
+    <p>This is <sup>superscripted</sup> text. The HTML "sup" element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like
+        WWW
+        <sup>[1]</sup>.</p>
+    <br>
+
+    <p>The HTML "blockquote' element defines a section that is quoted from another source. Browsers usually indent "blockquote" elements.</p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <br>
+    <p>The HTML "q" tag defines a short quotation. Browsers usually insert quotation marks around the q element.</p>
+
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <br><br>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <p>The HTML "abbr" tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Marking abbreviations can give useful information to browsers, translation systems and search-engines. Tip: Use the global title attribute
+        to show the description for the abbreviation/acronym when you mouse over the element. .</p>
+    <br><br>
+    <p>The HTML address element defines contact information (author/owner) of a document or article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc. The text in the "address" element usually
+        renders in italic, and browsers will always add a line break before and after the "address" element.</p>
+
+    <address>
+            Written by John Doe.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+            </address>
+    <br><br>
+    <p>The HTML "cite" tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.). Note: A person's name is not the title of a work. The text in the "cite" element usually renders in italic.</p>
+
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <br><br>
+
+    <p>BDO stands for Bi-Directional Override. If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl) The HTML <bdo> tag is used to override the current text direction.
+            </p>
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+        <br><br>
+        <!-- Border Color -->
+        <h1 style="border:2px solid Tomato;">Hello World</h1>
+        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+        <h1 style="border:2px solid Violet;">Hello World</h1>
+
+        <p>Same as color name "Tomato":</p>
+
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+        <p>Same as color name "Tomato", but 50% transparent:</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+        <p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+        Button as a Link To use an HTML button as a link, you have to add some JavaScript code.
+
+        <!-- Button as a Link
+            To use an HTML button as a link, you have to add some JavaScript code.
+            JavaScript allows you to specify what happens at certain events, such as a click of a button -->
+        <h2>Button as a Links</h2>
+
+        <p>Click the button to go to the HTML tutorial.</p>
+
+        <button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button>
+
+        <h2>Relative URLs</h2>
+        <p><a href="#parag">URL Relative - direciona para algum lugar dentro da mesma pagina ou outra página/arquivo no mesmo ambiente</a></p>
+        <p><a href="C:/Users/Eduardo/Desktop/esp32.txt">CSS Tutorial</a></p>
+        <p><a href="C:/Users/Eduardo/Desktop/edital_2020_02_ACM_ACS.pdf">CSS Tutorial</a></p>
+
+        <br>
+        <h2>Link Titles</h2>
+        <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+        <br>
+        <br>
+        <h2>Link to an Email Address</h2>
+
+        <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+        <p><a href="mailto:someone@example.com" target="_blank">Send email</a></p>
+        <br>
+        <br>
+        <footer>
+            <div id="copyright ">
+                &copy; 2020 Meu Blog. All rights reserved.
+                <a href="# ">
+                    <img alt="LICENSE " src="https://img.shields.io/github/license/eduardodarocha/Curso_Sololearn " />
+                </a>
+            </div>
+        </footer>
 </body>
 
 </html>
