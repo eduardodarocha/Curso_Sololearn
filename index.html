@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Rocha">
+    <meta name="description" content="O Site/Blog foi criado para ser um ambiente de teste para os vários cursos sobre
+    HTML, CSS, Javascript que estou fazendo.">
+    <meta name="keywords" content="html, css, javascript, cursos, web development">
     <title>Meu primeiro Blog</title>
+
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="shortcut icon" href="imagens/robot avatar.ico" type="image/x-icon">
 </head>
 <menu>
 
@@ -469,22 +476,24 @@
         <input type="text " name="username " placeholder="Username " /><br />
         <input type="password " name="password " placeholder="password " /><br />
         <input type="submit " name="submit " value="Log In " />
+
+        <br>
+        <br>
+
+        <!-- Form Elements -->
+        <input type="radio " name="gender " value="male " checked/>Male <br />
+        <input type="radio " name="gender " value="female " />Female <br />
+        <input type="radio " name="gender " value="undefined " />Underfined <br/><br/><br/>
+
+        <input type="checkbox " name="gender " value="male " />Male <br/>
+        <input type="checkbox " name="gender " value="female " />Female<br/>
+
+        <!-- The submit button submits a form to its action attribute: -->
+        <input type="submit " value="Submit " />
+        <input type="submit " value="Log In " />
+        <input type="submit " value="Sign In " />
+
     </form>
-    <br>
-    <br>
-
-    <!-- Form Elements -->
-    <input type="radio " name="gender " value="male " />Male <br />
-    <input type="radio " name="gender " value="female " />Female <br />
-    <input type="radio " name="gender " value="undefined " />Underfined <br/><br/><br/>
-
-    <input type="checkbox " name="gender " value="male " />Male <br/>
-    <input type="checkbox " name="gender " value="female " />Female<br/>
-
-    <!-- The submit button submits a form to its action attribute: -->
-    <input type="submit " value="Submit " />
-    <input type="submit " value="Log In " />
-    <input type="submit " value="Sign In " />
 
 
     <!-- Atividade do Curso - fim-->
@@ -610,7 +619,7 @@
         the user to only give you one answer out of multiple options. -->
 
         <label for="indoor">
-            <input type="radio" id="indoor" name="indoor-outdoor">Indoor
+            <input type="radio" id="indoor" name="indoor-outdoor" checked>Indoor
         </label>
         <label for="outdoor">
             <input type="radio" id="outdoor" name="indoor-outdoor">Outdoor
@@ -779,8 +788,68 @@
         <h2>Link to an Email Address</h2>
 
         <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
-
         <p><a href="mailto:someone@example.com" target="_blank">Send email</a></p>
+
+        <h1 id="css1">Fontes e texto para se usar CSS</h1>
+        <p id="css1">Fontes e texto para se usar CSS no parágrafo.<br> line-height: 2; espaçamento enre as linhas<br> letter-spacing: 1px; espaçamento entre as letras</p>
+        <br>
+        <br>
+
+        <h2>Floating Images</h2>
+        <p><strong>Float the image to the right:</strong></p>
+
+        <p>
+            <img src="imagens/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"> A paragraph with a floating image - right. A paragraph with a floating image - right. A paragraph with a floating image - right.
+        </p>
+        <br>
+        <br>
+        <p><strong>Float the image to the left:</strong></p>
+        <p>
+            <img src="imagens/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> A paragraph with a floating image - left. A paragraph with a floating image - left. A paragraph with a floating image - left.
+        </p>
+        <br>
+        <br>
+        <img src="imagens/nyan2.gif" alt="Flying rainbow cat" style="width:200px, height:300px">
+
+        <!-- Image Map -->
+        <br>
+        <br>
+        <img src="imagens/img-map.jpg" alt="mapa de poligonos" usemap="#polimapa">
+        <map name="polimapa">
+    <area shape="poly" coords="75,58,116,131,33,131" alt="triangulo" href="https://pt.wikipedia.org/wiki/Tri%C3%A2ngulo" target="_blank">
+    <area shape="rect" coords="151,64, 217,128" alt="quadrado" href="https://pt.wikipedia.org/wiki/Quadrado" target="_blank">
+    <area shape="poly" coords="290,54,333,86,317,138,262,137,246,86" href="https://www.atractor.pt/mat/incomensurabilidade/pentagono.html" alt="pentagono" target="_blank">
+    <area shape="circle" coords="401, 241,45" href="https://pt.wikipedia.org/wiki/C%C3%ADrculo" alt="circulo" target="_blank">    
+</map>
+        <br>
+        <br> The HTML
+        <!--The HTML <picture> element gives web developers more flexibility in 
+            specifying image resources. The <picture> element contains one or more
+            <source> elements, each referring to different images through 
+            the srcset attribute. This way the browser can choose the 
+            image that best fits the current view and/or device. 
+            Each <source> element has a media attribute that defines 
+            when the image is the most suitable. -->
+        <picture>
+            <source media="(min-width: 1050px)" srcset="imagens/ilusao-otica-psicodelicas-9.jpg">
+            <source media="(min-width: 665px)" srcset="imagens/ilusao-2.jpg">
+            <img src="imagens/ilusao-3.jpg">
+        </picture>
+
+        <br>
+        <br>
+        <h2>Navigation Menu</h2>
+        <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+        <ul class="lista-teste">
+            <li id="item-lista"><a href="#home">Home</a></li>
+            <li id="item-lista"><a href="#news">News</a></li>
+            <li id="item-lista"><a href="#contact">Contact</a></li>
+            <li id="item-lista"><a href="#about">About</a></li>
+        </ul>
+
+
+
         <br>
         <br>
         <footer>
@@ -791,6 +860,7 @@
                 </a>
             </div>
         </footer>
+        <script src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -59,7 +59,7 @@ p {
 }
 
 #header {
-    background-image: url("imagens/logo3.img");
+    background-image: url("../imagens/coding-image-header-cut.jpeg");
     background-size: cover;
 }
 
@@ -72,11 +72,14 @@ p {
 
 #header p {
     font-size: 25pt;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 5px;
-    margin: 0;
+    margin: 10px auto 0px;
     font-weight: 900;
     text-align: center;
+    background-color: #72c7f88e;
+    width: 250px;
+    border-radius: 5px;
 }
 
 
@@ -224,6 +227,32 @@ textarea {
     opacity: 0.8;
 }
 
+h1#css1 {
+    font-size: 60px;
+    text-align: center;
+    background-color: #c7ebe9;
+    text-shadow: 3px 3px 5px rgb(122, 120, 120);
+}
+
+
+/* O text-shadow,
+que aplica uma sombra ao conteúdo de texto do elemento. 
+Seus quatro valores são os seguintes: 
+O primeiro valor em pixel define o deslocamento horizontal da sombra do texto — até onde ele se move: um valor negativo deve movê-la para a esquerda. 
+O segundo valor em pixel define o deslocamento vertical da sombra do texto — o quanto ela se move para baixo, um valor negativo deve movê-la para cima. 
+O terceiro valor em pixel define o raio de desfoque da sombra — um valor maior significará uma sombra mais borrada. 
+O quarto valor define a cor base da sombra. */
+
+p#css1 {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 3px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
 .copyright {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15pt;
@@ -234,6 +263,32 @@ textarea {
 
 .curso {
     font-family: Arial, sans-serif;
+}
+
+ul.lista-teste {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    height: 50px;
+    width: 310px;
+}
+
+li#item-lista {
+    float: left;
+}
+
+li#item-lista a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li#item-lista a:hover {
+    background-color: #606060;
 }
 
 
