@@ -822,7 +822,7 @@
     <area shape="circle" coords="401, 241,45" href="https://pt.wikipedia.org/wiki/C%C3%ADrculo" alt="circulo" target="_blank">    
 </map>
         <br>
-        <br> The HTML
+        <br> The HTML - A imagem muda se o dispositivo tiver uma tela de tamanho menor ou se o browser for diminuido de tamnho
         <!--The HTML <picture> element gives web developers more flexibility in 
             specifying image resources. The <picture> element contains one or more
             <source> elements, each referring to different images through 
@@ -847,21 +847,243 @@
             <li id="item-lista"><a href="#contact">Contact</a></li>
             <li id="item-lista"><a href="#about">About</a></li>
         </ul>
+        <br>
+        <br>
 
+        <!-- HTML Block and Inline Elements -->
 
+        <!-- Block-level Elements - A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+The <div> element is a block-level element. -->
+        <div style="border: 2px solid black">Hello World</div>
+
+        <p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+        <br>
+        <br>
+
+        <!-- Inline Elements
+        An inline element does not start on a new line and it only takes up as much width as necessary.
+                This is a <span> element inside a paragraph. -->
+        <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold; border:1px solid black">dark green</span> eyes.</p>
+        <p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+        <br>
+        <br>
+        <!-- Use of The class Attribute in JavaScript The class name can also be used by JavaScript to perform certain tasks for specific elements. JavaScript can access elements with a specific class name with the getElementsByClassName() method: -->
+        <h2>Use of The Class Attribute in JAvaScript</h2>
+        <p>Click the button to hide all elements with class name: "city":</p>
+        <button onclick="myFunction()">Hide elements</button>
+        <h2 class=" city ">London</h2>
+        <p>London is the capital of England</p>
+
+        <h2 class="city ">Paris</h2>
+        <p>Paris is the capital of France</p>
+
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo is the capital of Japan</p>
+
+        <script>
+            function myFunction() {
+                let x = document.getElementsByClassName("city ");
+                for (let i = 0; i < x.length; i++) {
+                    x[i].style.display = "none ";
+                }
+            }
+        </script>
 
         <br>
         <br>
-        <footer>
-            <div id="copyright ">
-                &copy; 2020 Meu Blog. All rights reserved.
-                <a href="# ">
-                    <img alt="LICENSE " src="https://img.shields.io/github/license/eduardodarocha/Curso_Sololearn " />
-                </a>
-            </div>
-        </footer>
-        <script src="scripts/main.js"></script>
-</body>
+
+        <style>
+            /* Style the element with the id "myHeader" */
+            
+            #myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+            /* Style all elements with the class name "city" */
+            
+            .city {
+                background-color: tomato;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <h2>Difference Between Class and ID</h2>
+            <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+            <!-- An element with a unique id -->
+            <h1 id="myHeader">My Cities</h1>
+
+            <!-- Multiple elements with same class -->
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+
+            <br>
+            <!-- <br> HTML Bookmarks with ID and Links HTML bookmarks are used to allow readers to jump to specific parts of a webpage. Bookmarks can be useful if your page is very long. To use a bookmark, you must first create it, and then add a link to it.
+            Then, when the link is clicked, the page will scroll to the location with the bookmark. -->
+            <h1>HTML Bookmarks with ID and Links</h1>
+            <p><a href="#C4">Jump to Chapter 4</a></p>
+            <p><a href="#C10">Jump to Chapter 10</a></p>
+            <p><a href="#C15">Jump to Chapter 15</a></p>
+            <p><a href="#C20">Jump to Chapter 20</a></p>
+
+            <h2>Chapter 1</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 2</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 3</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2 id="C4">Chapter 4</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 5</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 6</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 7</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 8</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 9</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2 id="C10">Chapter 10</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 11</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 12</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 13</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 14</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2 id="C15">Chapter 15</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 16</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 17</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 18</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 19</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2 id="C20">Chapter 20</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 21</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 22</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <h2>Chapter 23</h2>
+            <p>This chapter explains ba bla bla</p>
+
+            <br>
+            <br>
+
+            <h2>Using The id Attribute in JavaScript</h2>
+            <p>The id attribute can also be used by JavaScript to perform some tasks for that specific element.<br>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+            <h1 id="myHeaderJS">Hello World!</h1>
+            <button onclick="displayResult()">Change text</button>
+
+            <script>
+                function displayResult() {
+                    document.getElementById("myHeaderJS").innerHTML = "Have a nice day!";
+                }
+            </script>
+            <br>
+            <br>
+            <h2>HTML Iframes - Iframe - Set Height and Width</h2>
+            <p>Use the height and width attributes to specify the size of the iframe. The height and width are specified in pixels by default</p>
+            <iframe src="https://htmlcheatsheet.com/" height="400" width="500" title="Iframe Example"></iframe><br>
+
+
+            <h2>Custom Iframe Border</h2>
+            <p>With CSS, you can also change the size, style and color of the iframe's border or remove the border with "border:none;"</p>
+
+            <iframe src="https://htmlcheatsheet.com/" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+            <br>
+            <br>
+            <h2>Iframe - Target for a Link</h2>
+            <p>Iframe - Target for a Link An iframe can be used as the target frame for a link. The target attribute of the link must refer to the name attribute of the iframe</p>
+
+            <iframe src="https://htmlcheatsheet.com/" name="iframe_a" height="300px" width="100%" title="IFrame Example"></iframe> <br>
+            <p>
+                <a href="text-start.html" target="iframe_a">Click para uma receita de Hummus</a>
+            </p>
+            <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+            <br><br>
+
+
+            <!-- The HTML <script> Tag -->
+            <h1>My First JavaScript</h1>
+            <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+            <script>
+                function light(sw) {
+                    var pic;
+                    if (sw == 0) {
+                        pic = "imagens/pic_bulboff.jpg"
+                    } else {
+                        pic = "imagens/pic_bulbon.jpg"
+                    }
+                    document.getElementById('myImage').src = pic;
+                }
+            </script>
+
+            <img id="myImage" src="imagens/pic_bulboff.jpg" width="169" height="220">
+
+            <p>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light Off</button>
+            </p>
+
+            <br>
+            <br>
+
+            <h2>Using a Relative File Path</h2>
+            <img src="../imagens/Iggy 2.JPG" alt="Mountain" style="width:300px">
+            <footer>
+                <div id="copyright ">
+                    &copy; 2020 Meu Blog. All rights reserved.
+                    <a href="# ">
+                        <img alt="LICENSE " src="https://img.shields.io/github/license/eduardodarocha/Curso_Sololearn " />
+                    </a>
+                </div>
+            </footer>
+            <script src="scripts/main.js "></script>
+        </body>
 
 </html>
 
