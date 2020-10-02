@@ -126,7 +126,7 @@ td {
 
 li {
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 progress {
@@ -335,4 +335,197 @@ li#item-lista a:hover {
 
 .Computer-code-of-web-page-5-rgba {
     color: rgba(165, 96, 36, 1);
+}
+
+
+/*The border-style property specifies what kind of border to display.*/
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.ridge {
+    border-style: ridge;
+}
+
+p.inset {
+    border-style: inset;
+}
+
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+
+/*The border-width property specifies the width of the four borders.
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick*/
+
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.four {
+    border-style: dotted;
+    border-width: thick;
+}
+
+p.five {
+    border-style: double;
+    border-width: 15px;
+}
+
+p.six {
+    border-style: double;
+    border-width: thick;
+}
+
+
+/*Specific Side Widths and colors*/
+
+p.one-a {
+    border-style: solid;
+    border-width: 5px 20px;
+    border-color: rgb(54, 158, 28);
+    /* 5px top and bottom, 20px on the sides */
+}
+
+p.two-b {
+    border-style: solid;
+    border-width: 20px 5px;
+    /* 20px top and bottom, 5px on the sides */
+}
+
+p.three-c {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+    /* 25px top, 10px right, 4px bottom and 35px left */
+}
+
+
+/* The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border)*/
+
+p.four-a {
+    border: 5px solid red;
+}
+
+p.four-b {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+
+p.normal {
+    border: 2px solid red;
+}
+
+p.round1 {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+p.round2 {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+p.round3 {
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+div.op-one {
+    background-color: green;
+}
+
+div.first {
+    background-color: green;
+    opacity: 0.1;
+}
+
+div.second {
+    background-color: green;
+    opacity: 0.3;
+}
+
+div.third {
+    background-color: green;
+    opacity: 0.6;
+}
+
+
+/* Transparency using RGBA */
+
+div.padrao {
+    background: rgba(0, 128, 0, 1);
+}
+
+div.firstop {
+    background: rgba(0, 128, 0, 0.1);
+}
+
+div.secondop {
+    background: rgba(0, 128, 0, 0.3);
+}
+
+div.thirdop {
+    background: rgba(0, 128, 0, 0.6);
+}
+
+
+/* CSS background-image The background-image property specifies an image to use as the background of an element. */
+
+div.backgimage {
+    /* background-image: url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px; */
+    background: hsl(0, 0%, 100%) url("../imagens/paper.gif") no-repeat right top;
+    /* background: hsl(0, 0%, 100%) url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif") no-repeat right top; */
+}
+
+div.boxmodel {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
 }
