@@ -186,7 +186,7 @@
         <ul>
             <li>Python <br />
                 <!-- <progress min="0" max="100" value="80"></progress> -->
-                <progress value="70" max="100">20 %</progress>
+                <progress value="70" min="0" max="100">20 %</progress>
             </li>
             <li> JavaScript <br/>
                 <progress min="0" max="100" value="50"></progress>
@@ -205,7 +205,10 @@
             <li>Markdown <br/>
                 <progress min="0" max="100 " value="90"></progress>
             </li>
-
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="32" max="100"> 32% </progress><br>
+            <label for="file">Downloading progress with meter:</label>
+            <meter id="file" value="32" max="100"> 32% </meter>
         </ul>
 
         <!-- Minhas Linguagens de Programação-->
@@ -251,6 +254,7 @@
             </svg>
 
         <form>
+            <label for="name">Nome Comleto:</label>
             <input name="name " placeholder="Name " type="text " required /><br/>
             <input name="email " placeholder="Email " type="email " required /><br/>
             <textarea name="message " placeholder="Message " required></textarea>
@@ -443,15 +447,98 @@
 
 
     <!-- The <form> Element -->
+    <h1>The form autocomplete attribute</h1>
 
-    <form>
-        <input type="text " name="username " /><br />
-        <input type="password " name="password " />
-    </form><br/>
+    <p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
 
+    <p>Then, try to set autocomplete to "off".</p>
+    <form action="index.html" autocomplete="on">
+        <!-- <input type="text " name="username " /><br />
+        <input type="password " name="password " /> -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Submit Form" width="100px">
+    </form><br/><br/>
+    <h2>The select Element</h2>
+
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="index.html">
+        <label for="carros">Selecione o carro:</label>
+        <select id="carros" name="carros">
+        <!-- <select id="carros" name="caros" size="3"> Use the size attribute to specify the number of visible values: -->
+        <!-- <select id="cars" name="cars" size="4" multiple>  Use the multiple attribute to allow the user to select more than one value -->
+        <option value="volkswagem">Volkswagem</option>
+        <option value="fiat">Fiat</option>
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="ford">Ford</option>
+        <option value="mercedes">Mercedes Benz</option>
+        
+        </select><br>
+        <textarea name="message" rows="10" cols="30" style="width:200px; height:200px;">The cat was playing in the garden.</textarea><br>
+        <input type="submit" onclick="alert('Isso é um teste do submit')"> <br>
+
+    </form>
+    <br/><br/>
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+    <h3>HTML Input Types</h3>
+    <p>Here are the different input types you can use in HTML</p>
+
+
+    <form action="/action_page.php">
+        <fieldset style="text-align:left; width:400px;">
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="reset">
+            <input type="button" onclick="alert('Teste de Botão')" value="Click Me!"><br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" style="width: 50px; height:50px;"><br/>
+            <label for="birthday">Data de Aniversário</label>
+            <input type="date" name="birthday" value="birthday"><br/>
+            <label for="meuarquivo">Selecione um arquivo:</label><br>
+            <input type="file" id="meuarquivo" name="meuarquivo">
+            <input type="file" id="files" name="files" multiple><br/>
+            <!--Multiplos arquivos podem ser inseridos-->
+            <label for="qtd">Quantidade (entre 1 e 10):</label>
+            <input type="number" name="qtd" value="qtd" min="1" max="10"><br/>
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+            <input type="submit" value="Submit" id="teste">
+        </fieldset>
+    </form>
+    <br/><br/>
+    <h2>The datalist Element</h2>
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    <p>
+        Digite uma letra no campo abaixo e a lista aparecerá
+    </p>
+    <br>
+    <form action="index.html">
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explore">
+            <option value="Chrome">
+            <option value="Edge">
+            <option value="Firefox"></option>
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Chromium">
+    </datalist><br>
+        <input type="color" style="width:50px; height:50px; padding:7px">
+    </form>
+
+    <br/><br/>
     <form>
         <label>Username </label>
-        <input type="text " name="username " /><br>
+        <input type=" text " name="username " /><br>
         <label>Password </label>
         <input type="password " name="password " />
     </form>
@@ -501,12 +588,12 @@
     <!-- Atividade do Curso - fim-->
 
     <!-- Inicio do Curso w3schools and freecodecamp.org -->
-    <!-- <div class="3wschool" id="cursohtml" style="background-color: aquamarine;"> -->
-    <div class="3wschool" id="cursohtml">
+    <!-- <div class="3wschool " id="cursohtml " style="background-color: aquamarine; "> -->
+    <div class="3wschool " id="cursohtml ">
 
         <!-- Headings-- -->
         <h1>Heading 1</h1>
-        <h2 style="color:blue;">Heading 2</h2>
+        <h2 style="color:blue; ">Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
         <h5>Heading 5</h5>
@@ -538,55 +625,55 @@
 
         <hr>
 
-        <h1 style="background-color:powderblue;">The CSS "background-color" property defines the background color for an HTML element.</h1>
-        <p style="background-color:tomato;">The CSS "background-color" property defines the background color for an HTML element.</p>
+        <h1 style="background-color:powderblue; ">The CSS "background-color " property defines the background color for an HTML element.</h1>
+        <p style="background-color:tomato; ">The CSS "background-color " property defines the background color for an HTML element.</p>
         <hr>
 
-        <h1 style="color: blueviolet;">The CSS "color" property defines the text color for an HTML element</h1>
+        <h1 style="color: blueviolet; ">The CSS "color " property defines the text color for an HTML element</h1>
 
-        <p style="color: #606060;">The CSS "color" property defines the text color for an HTML element</p>
-
-        <hr>
-
-        <h1 style="font-family:verdana;">The CSS "font-family" property defines the font to be used for an HTML element.</h1>
-        <p style="font-family:courier;">The CSS "font-family" property defines the font to be used for an HTML element.</p>
+        <p style="color: #606060; ">The CSS "color " property defines the text color for an HTML element</p>
 
         <hr>
 
-        <h1 style="font-size: 310%" ;>The CSS "font-size" property defines the text size for an HTML element.</h1>
+        <h1 style="font-family:verdana; ">The CSS "font-family " property defines the font to be used for an HTML element.</h1>
+        <p style="font-family:courier; ">The CSS "font-family " property defines the font to be used for an HTML element.</p>
 
-        <p style="font-size: 160%;">The CSS "font-size" property defines the text size for an HTML element.</p>
+        <hr>
 
-        <h1 style="text-align: center;">The CSS "text-align" property defines the horizontal text alignment for an HTML element.(center)
+        <h1 style="font-size: 310% " ;>The CSS "font-size " property defines the text size for an HTML element.</h1>
+
+        <p style="font-size: 160%; ">The CSS "font-size " property defines the text size for an HTML element.</p>
+
+        <h1 style="text-align: center; ">The CSS "text-align " property defines the horizontal text alignment for an HTML element.(center)
 
         </h1>
 
-        <p style="text-align:right;">The CSS "text-align" property defines the horizontal text alignment for an HTML element.(right)</p>
+        <p style="text-align:right; ">The CSS "text-align " property defines the horizontal text alignment for an HTML element.(right)</p>
 
         <hr>
         <!-- link usando imagem como ancora -->
-        <a href="https://bit.ly/fcc-relaxing-cat"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+        <a href="https://bit.ly/fcc-relaxing-cat "><img src="https://bit.ly/fcc-relaxing-cat " alt="A cute orange cat lying on its back. "></a>
 
         <!-- Link to Internal Sections of a Page with Anchor Elements -->
-        <a href="#header"><br> Ir para o inicio, na mesma página</a>
+        <a href="#header "><br> Ir para o inicio, na mesma página</a>
         <br>
         <br>
         <!-- Nest an Anchor Element within a Paragraph -->
         <p>Nest an
-            <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-an-anchor-element-within-a-paragraph" target="_blank"> Anchor Element </a> within a Paragraph
+            <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-an-anchor-element-within-a-paragraph " target="_blank "> Anchor Element </a> within a Paragraph
         </p>
         <br>
         <br>
         <br>
 
         <!-- Text Field input elements are a convenient way to get input from your user. -->
-        <input type="text" name="texto teste" value="valor que aparece na caixa">
-        <!-- "value" vai aparecer na caixa e fazer parte do input a menos 
+        <input type="text " name="texto teste " value="valor que aparece na caixa ">
+        <!-- "value " vai aparecer na caixa e fazer parte do input a menos 
         que se apaque o texto -->
 
         <br>
-        <input type="text" name="texto teste" placeholder="cat photo URL">
-        <!-- "placeholder" vai aparecer na caixa e não faz parte do input 
+        <input type="text " name="texto teste " placeholder="cat photo URL ">
+        <!-- "placeholder " vai aparecer na caixa e não faz parte do input 
         quando clicar para digitar texto -->
         <br>
 
@@ -594,25 +681,25 @@
         data to a server using nothing more than pure HTML. You can do this 
         by specifying an action on your form element. -->
 
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <input type="text" placeholder="Após input, enter leva para a URL do action">
-            <button type="submit">Submit</button>
+        <form action="https://freecatphotoapp.com/submit-cat-photo ">
+            <input type="text " placeholder="Após input, enter leva para a URL do action ">
+            <button type="submit ">Submit</button>
         </form>
 
         <br>
         <br>
         <!-- Add a Submit Button to a Form -->
         <form>
-            <button type="submit">Isto é um botão para submeter um form</button>
+            <button type="submit ">Isto é um botão para submeter um form</button>
         </form>
 
         <br>
         <br>
         <!-- Use HTML5 to Require a Field into a form so that your 
         user can't submit the form without completing this field.-->
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
+        <form action="https://freecatphotoapp.com/submit-cat-photo ">
+            <input type="text " placeholder="cat photo URL " required>
+            <button type="submit ">Submit</button>
         </form>
         <br>
         <br>
@@ -620,24 +707,24 @@
         <!-- You can use radio buttons for questions where you want 
         the user to only give you one answer out of multiple options. -->
 
-        <label for="indoor">
-            <input type="radio" id="indoor" name="indoor-outdoor" checked>Indoor
+        <label for="indoor ">
+            <input type="radio " id="indoor " name="indoor-outdoor " checked>Indoor
         </label>
-        <label for="outdoor">
-            <input type="radio" id="outdoor" name="indoor-outdoor">Outdoor
+        <label for="outdoor ">
+            <input type="radio " id="outdoor " name="indoor-outdoor ">Outdoor
         </label>
         <br>
         <br>
         <br>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label for="indoor">
-                <input id="indoor" type="radio" name="indoor-outdoor">indoor
+        <form action="https://freecatphotoapp.com/submit-cat-photo ">
+            <label for="indoor ">
+                <input id="indoor " type="radio " name="indoor-outdoor ">indoor
             </label>
-            <label for="outdoor">
-                <input id="outdoor" type="radio" name="indoor-outdoor">outdoor
+            <label for="outdoor ">
+                <input id="outdoor " type="radio " name="indoor-outdoor ">outdoor
             </label>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
+            <input type="text " placeholder="cat photo URL " required>
+            <button type="submit ">Submit</button>
         </form>
         <br>
         <br>
@@ -645,14 +732,14 @@
         <!-- Create a Set of Checkboxes - Forms commonly use checkboxes 
             for questions that may have more than one answer. -->
         <form>
-            <label for="loving">
-                <input id="loving" type="checkbox" name="personality">loving
+            <label for="loving ">
+                <input id="loving " type="checkbox " name="personality ">loving
             </label>
-            <label for="cute">
-                <input id="cute" type="checkbox" name="personality">cute
+            <label for="cute ">
+                <input id="cute " type="checkbox " name="personality ">cute
             </label>
-            <label for="relaxed">
-                <input id="relaxed" type="checkbox" name="personality">relaxed
+            <label for="relaxed ">
+                <input id="relaxed " type="checkbox " name="personality ">relaxed
             </label>
         </form>
 
@@ -664,18 +751,18 @@
 
             When the user submits the form with the indoor option selected, 
             the form data will include the line: indoor-outdoor=indoor. 
-            This is from the name and value attributes of the "indoor" input. 
+            This is from the name and value attributes of the "indoor " input. 
             If you omit the value attribute, the submitted form data uses the 
             default value, which is on. In this scenario, if the user clicked 
-            the "indoor" option and submitted the form, the resulting form data 
+            the "indoor " option and submitted the form, the resulting form data 
             would be indoor-outdoor=on, which is not useful. So the value attribute 
             needs to be set to something to identify the option. -->
 
-        <label for="indoor">
-                <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+        <label for="indoor ">
+                <input id="indoor " value="indoor " type="radio " name="indoor-outdoor ">Indoor
               </label>
-        <label for="outdoor">
-                <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        <label for="outdoor ">
+                <input id="outdoor " value="outdoor " type="radio " name="indoor-outdoor ">Outdoor
               </label>
 
     </div>
@@ -684,37 +771,37 @@
 
     <p>This text is normal.</p>
 
-    <p><b>This text is bold. The HTML "b" element defines bold text, without any extra importance.</b></p>
+    <p><b>This text is bold. The HTML "b " element defines bold text, without any extra importance.</b></p>
 
-    <strong>This text is important! The HTML "strong" element defines text with strong importance. The content inside is typically displayed in bold.</strong>
+    <strong>This text is important! The HTML "strong " element defines text with strong importance. The content inside is typically displayed in bold.</strong>
     <br><br>
 
-    <i>This text is italic - The HTML "i" element defines a part of text in an alternate voice or mood.</i>
+    <i>This text is italic - The HTML "i " element defines a part of text in an alternate voice or mood.</i>
     <br><br>
 
-    <em>This text is emphasized - The HTML "em" element defines emphasized text. The content inside is typically displayed in italic.</em>
+    <em>This text is emphasized - The HTML "em " element defines emphasized text. The content inside is typically displayed in italic.</em>
     <br><br>
 
     <small>This is some smaller text.</small>
     <br><br>
 
-    <p>Do not forget to buy <mark>milk</mark> today. The HTML "mark" element defines text that should be marked or highlighted.</p>
+    <p>Do not forget to buy <mark>milk</mark> today. The HTML "mark " element defines text that should be marked or highlighted.</p>
     <br>
 
-    <p>My favorite color is <del>blue</del> red. The HTML "del" element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
+    <p>My favorite color is <del>blue</del> red. The HTML "del " element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
     <br>
-    <p>My favorite color is <del>blue</del> <ins>red</ins>. The HTML "ins" element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>. The HTML "ins " element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
     <br>
-    <p>This is <sub>subscripted</sub> text. The HTML "sub" element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like
+    <p>This is <sub>subscripted</sub> text. The HTML "sub " element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like
         H
         <sub>2</sub>O. </p>
     <br>
-    <p>This is <sup>superscripted</sup> text. The HTML "sup" element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like
+    <p>This is <sup>superscripted</sup> text. The HTML "sup " element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like
         WWW
         <sup>[1]</sup>.</p>
     <br>
 
-    <p>The HTML "blockquote' element defines a section that is quoted from another source. Browsers usually indent "blockquote" elements.</p>
+    <p>The HTML "blockquote ' element defines a section that is quoted from another source. Browsers usually indent "blockquote" elements.</p>
     <p>Here is a quote from WWF's website:</p>
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
@@ -1102,7 +1189,7 @@ The <div> element is a block-level element. -->
 
         <br>
         <p>Use o atributo de download ao vincular a um download</p>
-        <a href="documents/Diving_Woman.mp3" download="Diving_Woman.mp3">Download Japanese Breakfast Music - Diving Woman </a>
+        <a href="music/Diving_Woman.mp3" download="Diving_Woman.mp3">Download Japanese Breakfast Music - Diving Woman </a>
         <br>
         <br>
         <p> Criando um menu de navegação</p>
@@ -1120,6 +1207,7 @@ The <div> element is a block-level element. -->
         <br>
         <br>
         <p>Lista de descrição</p>
+        <p> O objetivo dessas listas é marcar um conjunto de itens e suas descrições associadas, como termos e definições, ou perguntas e respostas.</p>
         <dl>
             <dt>Solilóquio</dt>
             <dd>No drama, onde um personagem fala a si mesmo, representando seus pensamentos ou sentimentos internos e no processo, transmitindo-os ao público (mas não a outros personagens).</dd>
@@ -1129,6 +1217,7 @@ The <div> element is a block-level element. -->
             <dd>No drama, onde um personagem compartilha um comentário apenas com o público para efeito humorístico ou dramático. Isso, geralmente é um sentimento, pensamento ou parte de informação de fundo adicional.</dd>
         </dl>
         <br>
+<<<<<<< Updated upstream
         <h1>CSS Tutorial</h1>
 
         <h2>The border-style Property</h2>
@@ -1290,6 +1379,70 @@ The <div> element is a block-level element. -->
                 </div>
             </footer>
             <script src="scripts/main.js "></script>
+=======
+        <p>Blockquotes</p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>The <strong>HTML<code>&lt;blockquote&gt;</code>Element</strong> (or <em>HTML Block Quotation Element) </em> indicates that the enclosed text is an extended quotation.</p>
+        </blockquote> <br>
+        <p>According to the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                <cite>MDN blockquote page</cite></a>:
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+              Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+        </blockquote>
+
+        <p>The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+            for short quotations that don't require paragraph breaks.</q> --
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+                <cite>MDN q page</cite></a>.</p>
+
+        <br>HTML also provides the &lt;time&gt; element for marking up times and dates in a machine-readable format. For example:</p>
+    <time datetime="2020-09-21">21 Setembro de 2020</time>
+    <br>
+    <!-- Just time, hours and minutes -->
+    <time datetime="19:30:20">19:30:20</time>
+    <br><br>
+    <p>Document and website structure</p>
+    <a href="document-teste.html" target="_blank">Page Document Test</a>
+    <br>
+    <br>
+    <!-- HTML Canvas Graphics -->
+
+    <canvas id="myCanvas" width="200" height="100" style="border:2px solid #000000;"></canvas>
+    <br>
+    <br>
+    <audio controls>
+        <source src="music/Boyish_Japanese_Breakfast.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <br>
+    <video width="400" height="250" controls>
+        <source src="video/MOV_0065.MP4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <p>
+        The &lt;object&gt; element defines an embedded object within an HTML document. It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML:
+    </p>
+    <object width="500" height="350" data="documents/HTML5NotesForProfessionals.pdf"></object>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div id="copyright ">
+            &copy; 2020 Meu Blog. All rights reserved.
+            <a href="# ">
+                <img alt="LICENSE " src="https://img.shields.io/github/license/eduardodarocha/Curso_Sololearn " />
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/main.js "></script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
