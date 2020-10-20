@@ -568,3 +568,15 @@ div.animation {
         background-color: yellow;
     }
 }
+
+img.top {
+    vertical-align: top;
+}
+
+img.middle {
+    vertical-align: middle;
+}
+
+img.bottom {
+    vertical-align: bottom;
+}
