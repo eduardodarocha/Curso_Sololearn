@@ -1,582 +1,591 @@
-﻿html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Handlee', cursive;
-    font-size: 13pt;
-    background-color: #efefef;
-    padding: 10px;
-    margin: 0;
-}
-
-.formulario#forme1 h1 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.formulario form {
-    width: 400px;
-}
-
-.formulario form input#botao-enviar {
-    color: rgb(7, 7, 7);
-    width: 100px;
-    text-align: center;
-}
-
-.section h1 {
-    font-size: 15pt;
-    color: #20bcd5;
-    text-align: center;
-    padding: 18px 0 18px 0;
-    margin: 0 0 10px 0;
-}
-
-h1 span {
-    border: 2mm ridge rgba(26, 61, 33, .75);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-    text-align: justify;
-}
-
-.img-circle {
-    border: 3px solid white;
-    border-radius: 50%;
-}
-
-.section {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-#header {
-    background-image: url("../imagens/coding-image-header-cut.jpeg");
-    background-size: cover;
-}
-
-#header img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-}
-
-#header p {
-    font-size: 25pt;
-    color: rgb(255, 255, 255);
-    padding-top: 5px;
-    margin: 10px auto 0px;
-    font-weight: 900;
-    text-align: center;
-    background-color: #72c7f88e;
-    width: 250px;
-    border-radius: 5px;
-}
-
-
-/* section p {} */
-
-.quote {
-    font-size: 12pt;
-    text-align: right;
-    margin-top: 10px;
-}
-
-table {
-    width: 75%;
-}
-
-table,
-th,
-td {
-    border: 2px solid #cecece;
-    border-collapse: collapse;
-    text-align: center;
-    table-layout: fixed;
-}
-
-.selected {
-    background-color: rgba(163, 193, 156, 1);
-    font-weight: bold;
-    color: white;
-}
-
-.Selected {
-    background-color: rgba(163, 193, 156, .8);
-    font-weight: bold;
-    color: rgba(1, 64, 89, 1);
-}
-
-.hora {
-    background-color: rgba(162, 191, 99, 1);
-}
-
-.dia_sem {
-    background-color: rgba(26, 61, 33, .51);
-}
-
-li {
-    margin-bottom: 15px;
-    font-weight: normal;
-}
-
-progress {
-    width: 70%;
-    height: 20px;
-    color: #3fb6b2;
-    background: #efefef;
-}
-
-progress::-webkit-progress-bar {
-    background: #efefef;
-}
-
-progress::-webkit-progress-value {
-    background: rgba(165, 96, 36, 1);
-}
-
-progress::-moz-progress-bar {
-    color: #3fb6b2;
-    background: #efefef;
-}
-
-iframe,
-audio {
-    display: block;
-    margin: 0 auto;
-    border: 3px solid #3fb6b2;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #f36f48;
-}
-
-form {
-    text-align: right;
-    margin-top: 0;
-}
-
-.submit {
-    background-color: #3fb6b2;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
-}
-
-.submit:hover {
-    background-color: #43a09d;
-}
-
-textarea {
-    height: 100px;
-}
-
-input,
-textarea {
-    margin-bottom: 10px;
-    font-size: 11pt;
-    padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
-    color: #787575;
-    border-radius: 5px;
-    width: 70%;
-    outline: none;
-}
-
-.face {
-    transform: scale(0.4);
-    margin: 0 auto;
-    display: block;
-    margin-top: -35px;
-    margin-bottom: -25px;
-}
-
-#contacts img {
-    height: 55px;
-    width: 55px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-#contacts {
-    text-align: center;
-}
-
-#contacts a {
-    text-decoration: none;
-}
-
-#contacts img:hover {
-    opacity: 0.8;
-}
-
-h1#css1 {
-    font-size: 60px;
-    text-align: center;
-    background-color: #c7ebe9;
-    text-shadow: 3px 3px 5px rgb(122, 120, 120);
-}
-
-
-/* O text-shadow,
+﻿    html {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Handlee', cursive;
+        font-size: 13pt;
+        background-color: #efefef;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .formulario#forme1 h1 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .formulario form {
+        width: 400px;
+    }
+    
+    .formulario form input#botao-enviar {
+        color: rgb(7, 7, 7);
+        width: 100px;
+        text-align: center;
+    }
+    
+    .section h1 {
+        font-size: 15pt;
+        color: #20bcd5;
+        text-align: center;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+    
+    h1 span {
+        border: 2mm ridge rgba(26, 61, 33, .75);
+        padding: 10px;
+        border-radius: 12px;
+    }
+    
+    p {
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+    }
+    
+    .img-circle {
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    
+    .section {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    #header {
+        background-image: url("../imagens/coding-image-header-cut.jpeg");
+        background-size: cover;
+    }
+    
+    #header img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+    
+    #header p {
+        font-size: 25pt;
+        color: rgb(255, 255, 255);
+        padding-top: 5px;
+        margin: 10px auto 0px;
+        font-weight: 900;
+        text-align: center;
+        background-color: #72c7f88e;
+        width: 250px;
+        border-radius: 5px;
+    }
+    /* section p {} */
+    
+    .quote {
+        font-size: 12pt;
+        text-align: right;
+        margin-top: 10px;
+    }
+    
+    table {
+        width: 75%;
+    }
+    
+    table,
+    th,
+    td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+    
+    .selected {
+        background-color: rgba(163, 193, 156, 1);
+        font-weight: bold;
+        color: white;
+    }
+    
+    .Selected {
+        background-color: rgba(163, 193, 156, .8);
+        font-weight: bold;
+        color: rgba(1, 64, 89, 1);
+    }
+    
+    .hora {
+        background-color: rgba(162, 191, 99, 1);
+    }
+    
+    .dia_sem {
+        background-color: rgba(26, 61, 33, .51);
+    }
+    
+    li {
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+    
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    
+    progress::-webkit-progress-bar {
+        background: #efefef;
+    }
+    
+    progress::-webkit-progress-value {
+        background: rgba(165, 96, 36, 1);
+    }
+    
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    
+    iframe,
+    audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    
+    form {
+        text-align: right;
+        margin-top: 0;
+    }
+    
+    .submit {
+        background-color: #3fb6b2;
+        padding: 12px 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    .submit:hover {
+        background-color: #43a09d;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    input,
+    textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+    
+    .face {
+        transform: scale(0.4);
+        margin: 0 auto;
+        display: block;
+        margin-top: -35px;
+        margin-bottom: -25px;
+    }
+    
+    #contacts img {
+        height: 55px;
+        width: 55px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    #contacts {
+        text-align: center;
+    }
+    
+    #contacts a {
+        text-decoration: none;
+    }
+    
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+    
+    h1#css1 {
+        font-size: 60px;
+        text-align: center;
+        background-color: #c7ebe9;
+        text-shadow: 3px 3px 5px rgb(122, 120, 120);
+    }
+    /* O text-shadow,
 que aplica uma sombra ao conteúdo de texto do elemento. 
 Seus quatro valores são os seguintes: 
 O primeiro valor em pixel define o deslocamento horizontal da sombra do texto — até onde ele se move: um valor negativo deve movê-la para a esquerda. 
 O segundo valor em pixel define o deslocamento vertical da sombra do texto — o quanto ela se move para baixo, um valor negativo deve movê-la para cima. 
 O terceiro valor em pixel define o raio de desfoque da sombra — um valor maior significará uma sombra mais borrada. 
 O quarto valor define a cor base da sombra. */
-
-p#css1 {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 3px;
-    width: 600px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-}
-
-.copyright {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15pt;
-    text-align: center;
-    padding-bottom: 10px;
-    color: grey;
-}
-
-.curso {
-    font-family: Arial, sans-serif;
-}
-
-ul.lista-teste {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    height: 50px;
-    width: 310px;
-}
-
-li#item-lista {
-    float: left;
-}
-
-li#item-lista a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li#item-lista a:hover {
-    background-color: #606060;
-}
-
-
-/* Color Theme Swatches in RGBA */
-
-.color-code-of-100-back-1-rgba {
-    color: rgba(26, 61, 33, 1);
-}
-
-.color-code-of-100-back-2-rgba {
-    color: rgba(73, 112, 77, 1);
-}
-
-.color-code-of-100-back-3-rgba {
-    color: rgba(163, 193, 156, 1);
-}
-
-.color-code-of-100-back-4-rgba {
-    color: rgba(184, 216, 170, 1);
-}
-
-.color-code-of-100-back-5-rgba {
-    color: rgba(228, 240, 198, 1);
-}
-
-
-/* Color Theme Swatches in RGBA */
-
-.Computer-code-of-web-page-1-rgba {
-    color: rgba(1, 64, 89, 1);
-}
-
-.Computer-code-of-web-page-2-rgba {
-    color: rgba(39, 111, 140, 1);
-}
-
-.Computer-code-of-web-page-3-rgba {
-    color: rgba(115, 140, 78, 1);
-}
-
-.Computer-code-of-web-page-4-rgba {
-    color: rgba(162, 191, 99, 1);
-}
-
-.Computer-code-of-web-page-5-rgba {
-    color: rgba(165, 96, 36, 1);
-}
-
-
-/*The border-style property specifies what kind of border to display.*/
-
-p.dotted {
-    border-style: dotted;
-}
-
-p.dashed {
-    border-style: dashed;
-}
-
-p.solid {
-    border-style: solid;
-}
-
-p.double {
-    border-style: double;
-}
-
-p.groove {
-    border-style: groove;
-}
-
-p.ridge {
-    border-style: ridge;
-}
-
-p.inset {
-    border-style: inset;
-}
-
-p.outset {
-    border-style: outset;
-}
-
-p.none {
-    border-style: none;
-}
-
-p.hidden {
-    border-style: hidden;
-}
-
-p.mix {
-    border-style: dotted dashed solid double;
-}
-
-
-/*The border-width property specifies the width of the four borders.
+    
+    p#css1 {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 3px;
+        width: 600px;
+        margin: 0 auto;
+        padding: 0 20px 20px 20px;
+        border: 5px solid black;
+    }
+    
+    .copyright {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15pt;
+        text-align: center;
+        padding-bottom: 10px;
+        color: grey;
+    }
+    
+    .curso {
+        font-family: Arial, sans-serif;
+    }
+    
+    ul.lista-teste {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+        height: 50px;
+        width: 310px;
+    }
+    
+    li#item-lista {
+        float: left;
+    }
+    
+    li#item-lista a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+    
+    li#item-lista a:hover {
+        background-color: #606060;
+    }
+    /* Color Theme Swatches in RGBA */
+    
+    .color-code-of-100-back-1-rgba {
+        color: rgba(26, 61, 33, 1);
+    }
+    
+    .color-code-of-100-back-2-rgba {
+        color: rgba(73, 112, 77, 1);
+    }
+    
+    .color-code-of-100-back-3-rgba {
+        color: rgba(163, 193, 156, 1);
+    }
+    
+    .color-code-of-100-back-4-rgba {
+        color: rgba(184, 216, 170, 1);
+    }
+    
+    .color-code-of-100-back-5-rgba {
+        color: rgba(228, 240, 198, 1);
+    }
+    /* Color Theme Swatches in RGBA */
+    
+    .Computer-code-of-web-page-1-rgba {
+        color: rgba(1, 64, 89, 1);
+    }
+    
+    .Computer-code-of-web-page-2-rgba {
+        color: rgba(39, 111, 140, 1);
+    }
+    
+    .Computer-code-of-web-page-3-rgba {
+        color: rgba(115, 140, 78, 1);
+    }
+    
+    .Computer-code-of-web-page-4-rgba {
+        color: rgba(162, 191, 99, 1);
+    }
+    
+    .Computer-code-of-web-page-5-rgba {
+        color: rgba(165, 96, 36, 1);
+    }
+    /*The border-style property specifies what kind of border to display.*/
+    
+    p.dotted {
+        border-style: dotted;
+    }
+    
+    p.dashed {
+        border-style: dashed;
+    }
+    
+    p.solid {
+        border-style: solid;
+    }
+    
+    p.double {
+        border-style: double;
+    }
+    
+    p.groove {
+        border-style: groove;
+    }
+    
+    p.ridge {
+        border-style: ridge;
+    }
+    
+    p.inset {
+        border-style: inset;
+    }
+    
+    p.outset {
+        border-style: outset;
+    }
+    
+    p.none {
+        border-style: none;
+    }
+    
+    p.hidden {
+        border-style: hidden;
+    }
+    
+    p.mix {
+        border-style: dotted dashed solid double;
+    }
+    /*The border-width property specifies the width of the four borders.
 
 The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick*/
-
-p.one {
-    border-style: solid;
-    border-width: 5px;
-}
-
-p.two {
-    border-style: solid;
-    border-width: medium;
-}
-
-p.three {
-    border-style: dotted;
-    border-width: 2px;
-}
-
-p.four {
-    border-style: dotted;
-    border-width: thick;
-}
-
-p.five {
-    border-style: double;
-    border-width: 15px;
-}
-
-p.six {
-    border-style: double;
-    border-width: thick;
-}
-
-
-/*Specific Side Widths and colors*/
-
-p.one-a {
-    border-style: solid;
-    border-width: 5px 20px;
-    border-color: rgb(54, 158, 28);
-    /* 5px top and bottom, 20px on the sides */
-}
-
-p.two-b {
-    border-style: solid;
-    border-width: 20px 5px;
-    /* 20px top and bottom, 5px on the sides */
-}
-
-p.three-c {
-    border-style: solid;
-    border-width: 25px 10px 4px 35px;
-    /* 25px top, 10px right, 4px bottom and 35px left */
-}
-
-
-/* The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border)*/
-
-p.four-a {
-    border: 5px solid red;
-}
-
-p.four-b {
-    border-left: 6px solid red;
-    background-color: lightgrey;
-}
-
-p.normal {
-    border: 2px solid red;
-}
-
-p.round1 {
-    border: 2px solid red;
-    border-radius: 5px;
-}
-
-p.round2 {
-    border: 2px solid red;
-    border-radius: 8px;
-}
-
-p.round3 {
-    border: 2px solid red;
-    border-radius: 12px;
-}
-
-div.op-one {
-    background-color: green;
-}
-
-div.first {
-    background-color: green;
-    opacity: 0.1;
-}
-
-div.second {
-    background-color: green;
-    opacity: 0.3;
-}
-
-div.third {
-    background-color: green;
-    opacity: 0.6;
-}
-
-
-/* Transparency using RGBA */
-
-div.padrao {
-    background: rgba(0, 128, 0, 1);
-}
-
-div.firstop {
-    background: rgba(0, 128, 0, 0.1);
-}
-
-div.secondop {
-    background: rgba(0, 128, 0, 0.3);
-}
-
-div.thirdop {
-    background: rgba(0, 128, 0, 0.6);
-}
-
-
-/* CSS background-image The background-image property specifies an image to use as the background of an element. */
-
-div.backgimage {
-    /* background-image: url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif");
+    
+    p.one {
+        border-style: solid;
+        border-width: 5px;
+    }
+    
+    p.two {
+        border-style: solid;
+        border-width: medium;
+    }
+    
+    p.three {
+        border-style: dotted;
+        border-width: 2px;
+    }
+    
+    p.four {
+        border-style: dotted;
+        border-width: thick;
+    }
+    
+    p.five {
+        border-style: double;
+        border-width: 15px;
+    }
+    
+    p.six {
+        border-style: double;
+        border-width: thick;
+    }
+    /*Specific Side Widths and colors*/
+    
+    p.one-a {
+        border-style: solid;
+        border-width: 5px 20px;
+        border-color: rgb(54, 158, 28);
+        /* 5px top and bottom, 20px on the sides */
+    }
+    
+    p.two-b {
+        border-style: solid;
+        border-width: 20px 5px;
+        /* 20px top and bottom, 5px on the sides */
+    }
+    
+    p.three-c {
+        border-style: solid;
+        border-width: 25px 10px 4px 35px;
+        /* 25px top, 10px right, 4px bottom and 35px left */
+    }
+    /* The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border)*/
+    
+    p.four-a {
+        border: 5px solid red;
+    }
+    
+    p.four-b {
+        border-left: 6px solid red;
+        background-color: lightgrey;
+    }
+    
+    p.normal {
+        border: 2px solid red;
+    }
+    
+    p.round1 {
+        border: 2px solid red;
+        border-radius: 5px;
+    }
+    
+    p.round2 {
+        border: 2px solid red;
+        border-radius: 8px;
+    }
+    
+    p.round3 {
+        border: 2px solid red;
+        border-radius: 12px;
+    }
+    
+    div.op-one {
+        background-color: green;
+    }
+    
+    div.first {
+        background-color: green;
+        opacity: 0.1;
+    }
+    
+    div.second {
+        background-color: green;
+        opacity: 0.3;
+    }
+    
+    div.third {
+        background-color: green;
+        opacity: 0.6;
+    }
+    /* Transparency using RGBA */
+    
+    div.padrao {
+        background: rgba(0, 128, 0, 1);
+    }
+    
+    div.firstop {
+        background: rgba(0, 128, 0, 0.1);
+    }
+    
+    div.secondop {
+        background: rgba(0, 128, 0, 0.3);
+    }
+    
+    div.thirdop {
+        background: rgba(0, 128, 0, 0.6);
+    }
+    /* CSS background-image The background-image property specifies an image to use as the background of an element. */
+    
+    div.backgimage {
+        /* background-image: url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif");
     background-repeat: no-repeat;
     background-position: right top;
     margin-right: 200px; */
-    background: hsl(0, 0%, 100%) url("../imagens/paper.gif") no-repeat right top;
-    /* background: hsl(0, 0%, 100%) url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif") no-repeat right top; */
-}
-
-div.boxmodel {
-    background-color: lightgrey;
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-}
-
-div.gradiente {
-    border-radius: 20px;
-    width: 50%;
-    height: 200px;
-    margin: 50 auto;
-    background: repeating-linear-gradient( 45deg, yellow 0px, blue 40px, green 40px, red 80px);
-}
-
-div.gradiente:hover {
-    transform: scale(1.2);
-    margin-left: 20px;
-    margin-top: 25px;
-}
-
-div.animation {
-    height: 40px;
-    width: 70%;
-    background: black;
-    margin: 50px auto;
-    border-radius: 5px;
-}
-
-#rect:hover {
-    animation-name: rainbow;
-    animation-duration: 4s;
-}
-
-@keyframes rainbow {
-    0% {
-        background-color: blue;
+        background: hsl(0, 0%, 100%) url("../imagens/paper.gif") no-repeat right top;
+        /* background: hsl(0, 0%, 100%) url("C:/Users/Eduardo/Documents/Code/Git_repository/Curso_Sololearn/imagens/paper.gif") no-repeat right top; */
     }
-    50% {
-        background-color: green;
+    
+    div.boxmodel {
+        background-color: lightgrey;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
     }
-    100% {
-        background-color: yellow;
+    
+    div.gradiente {
+        border-radius: 20px;
+        width: 50%;
+        height: 200px;
+        margin: 50 auto;
+        background: repeating-linear-gradient( 45deg, yellow 0px, blue 40px, green 40px, red 80px);
     }
-}
-
-img.top {
-    vertical-align: top;
-}
-
-img.middle {
-    vertical-align: middle;
-}
-
-img.bottom {
-    vertical-align: bottom;
-}
+    
+    div.gradiente:hover {
+        transform: scale(1.2);
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    
+    div.animation {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+    }
+    
+    #rect:hover {
+        animation-name: rainbow;
+        animation-duration: 4s;
+    }
+    
+    @keyframes rainbow {
+        0% {
+            background-color: blue;
+        }
+        50% {
+            background-color: green;
+        }
+        100% {
+            background-color: yellow;
+        }
+    }
+    
+    img.top {
+        vertical-align: top;
+    }
+    
+    img.middle {
+        vertical-align: middle;
+    }
+    
+    img.bottom {
+        vertical-align: bottom;
+    }
+    
+    .box {
+        font: 0.8em / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 210px;
+        height: 100px;
+        border: 5px solid lightblue;
+        border-radius: 20px 0 40px;
+        background-image: url(/imagens/star1.png), url(/imagens/star1.png), url(/imagens/star1.png), url(/imagens/star1.png);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: 10px, 180px 15px, 180px 38px, 180px 62px;
+    }
+    
+    .bebh2 {
+        text-align: center;
+        /* margin-top: 30px;*/
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    #gradiente {
+        font-size: 25px;
+        background: rgb(34, 193, 195);
+        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 2%, rgba(253, 187, 45, 1) 98%);
+    }
+    
+    #gradiente a {
+        text-decoration: none;
+        color: red;
+    }
